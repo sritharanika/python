@@ -1,0 +1,17 @@
+rows = ['qwertyuiop', 'asdfghjkl', 'zxcvbnm']
+n = int(input())
+words = [input() for _ in range(n)]
+result = []
+for word in words:
+    lowercase_word = word.lower()
+    same_row = False
+    for row in rows:
+        if all(char in row for char in lowercase_word):
+            same_row = True
+            break
+    if same_row:
+        result.append(word)
+for word in result:
+    print(word)
+if word not in result:
+    print("No words")
