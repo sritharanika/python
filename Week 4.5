@@ -1,0 +1,14 @@
+#disarium number
+n=int(input())
+s=len(str(n))
+t=n
+p=0
+while t!=0:
+    d=t%10
+    p=p+(d**s)
+    s=s-1
+    t=t//10
+if p==n:
+    print("Yes")
+else:
+    print("No")
