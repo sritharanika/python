@@ -1,0 +1,20 @@
+m=int(input())
+n=int(input())
+l1=[]
+l2=[]
+c=1
+
+for i in range(0,m*n*2,2):
+    a=int(input())
+    b=int(input())
+    if c%2!=0:
+        l1.append(a)
+        l1.append(b)
+    else:
+        l2.append(a)
+        l2.append(b)
+    c=c+1
+l3=[]
+l3.append(l1)
+l3.append(l2)
+print(l3)
