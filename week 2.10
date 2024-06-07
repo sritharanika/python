@@ -1,0 +1,6 @@
+#character
+n=int(input())
+if n==0:
+    print('C')
+else:
+    print('D')
