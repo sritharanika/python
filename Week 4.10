@@ -1,0 +1,6 @@
+#unique numbers 
+n=int(input())
+s=str(n)
+c=0
+l=list(ser(s))
+print(len(l)
