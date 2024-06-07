@@ -1,0 +1,15 @@
+#Electricity bill
+n=float(input())
+if n<=199:
+    a=n*1.20
+elif n>=200 and n<400:
+    a=n*1.50
+elif n>400 and n<600:
+    a=n*1.80
+elif n>=600:
+    a=n*2.00
+if (a<100):
+    a=100
+elif a>400:
+    a=a+(0.15*a)
+print("%.2f"%a)
