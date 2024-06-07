@@ -1,0 +1,14 @@
+s1=input()
+s2=input()
+N=int(input())
+s2set=set(s2)
+cc=[]
+c=0
+for char in s1:
+    if char in s2set and char not in cc:
+        cc.append(char)
+        c=c+1
+        if c==N:
+            break
+x=''.join(cc)
+print(x)
