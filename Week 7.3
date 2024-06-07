@@ -1,0 +1,15 @@
+#Take input from the user for the list of numbers
+nums = list(map(int, input().split()))
+
+# Initialize an empty set to store encountered numbers
+num_set = set()
+
+# Iterate through the list of numbers
+for num in nums:
+    # Check if the number is already in the set
+    if num in num_set:
+        print(num)
+        break
+    else:
+        # Add the number to the set if it's not already present
+        num_set.add(num)
