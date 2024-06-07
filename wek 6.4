@@ -1,0 +1,22 @@
+t=int(input())
+l1=list()
+
+while(t!=0):
+    n1=int(input())
+    l1=[]
+    l2=[]
+    for i in range(0,n1):
+        a=int(input())
+        l1.append(a)
+    n2=int(input())
+    for i in range(0,n2):
+        a=int(input())
+        l2.append(a)
+    t=t-1
+    c=set(l1)
+    d=set(l2)
+    e=list(c.intersection(d))
+    e.sort()
+    for i in e:
+        print(i,end=' ')
+    print('\n')
